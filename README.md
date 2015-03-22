@@ -20,7 +20,7 @@ The ranking service expects a GET request with a variable named `cards` that con
 As an example this is how one can call the ranking service from command line:
 
 ```
-curl -d 'cards=[
+curl -XGET -d 'cards=[
     {"rank":"5","suit":"diamonds"},
     {"rank":"6","suit":"diamonds"},
     {"rank":"7","suit":"diamonds"},
