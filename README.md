@@ -1,6 +1,6 @@
 # Rain Man
 
-Ranking service for Lean Poker running on `http://rainman.leanpoker.org/rank` during each sit'n'go. This service returns a JSON data structure representing a hand, once it is provided a list of cards.
+Ranking service for Lean Poker running on `http://rainman.leanpoker.org/rank`. This service returns a JSON data structure representing a hand, once it is provided a list of cards.
 
 ## How to call the ranking service
 
