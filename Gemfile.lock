@@ -1,20 +1,19 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    connection_pool (2.2.2)
+    connection_pool (2.2.5)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
     poker-ranking (1.1.5)
-    rack (2.2.2)
+    rack (2.2.3)
     rack-protection (2.0.8.1)
       rack
-    redis (4.1.3)
+    redis (4.4.0)
     ruby2_keywords (0.0.2)
-    sidekiq (6.0.5)
+    sidekiq (6.2.1)
       connection_pool (>= 2.2.2)
       rack (~> 2.0)
-      rack-protection (>= 2.0.0)
-      redis (>= 4.1.0)
+      redis (>= 4.2.0)
     sinatra (2.0.8.1)
       mustermann (~> 1.0)
       rack (~> 2.0)
