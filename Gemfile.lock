@@ -4,7 +4,10 @@ GEM
     connection_pool (2.2.2)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
+    nio4r (2.5.9)
     poker-ranking (1.1.5)
+    puma (6.3.0)
+      nio4r (~> 2.0)
     rack (2.2.2)
     rack-protection (2.0.8.1)
       rack
@@ -27,11 +30,12 @@ PLATFORMS
 
 DEPENDENCIES
   poker-ranking
+  puma
   sidekiq
   sinatra
 
 RUBY VERSION
-   ruby 2.7.0p0
+   ruby 3.1.4p223
 
 BUNDLED WITH
    2.1.2
