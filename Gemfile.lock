@@ -1,29 +1,43 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    connection_pool (2.2.2)
-    mustermann (1.1.1)
+    base64 (0.3.0)
+    connection_pool (2.5.4)
+    json (2.15.0)
+    logger (1.7.0)
+    mustermann (3.0.4)
       ruby2_keywords (~> 0.0.1)
-    nio4r (2.5.9)
+    nio4r (2.7.4)
     poker-ranking (1.1.5)
-    puma (6.3.0)
+    puma (7.0.4)
       nio4r (~> 2.0)
-    rack (2.2.2)
-    rack-protection (2.0.8.1)
-      rack
-    redis (4.1.3)
-    ruby2_keywords (0.0.2)
-    sidekiq (6.0.5)
-      connection_pool (>= 2.2.2)
-      rack (~> 2.0)
-      rack-protection (>= 2.0.0)
-      redis (>= 4.1.0)
-    sinatra (2.0.8.1)
-      mustermann (~> 1.0)
-      rack (~> 2.0)
-      rack-protection (= 2.0.8.1)
+    rack (3.2.1)
+    rack-protection (4.1.1)
+      base64 (>= 0.1.0)
+      logger (>= 1.6.0)
+      rack (>= 3.0.0, < 4)
+    rack-session (2.1.1)
+      base64 (>= 0.1.0)
+      rack (>= 3.0.0)
+    rackup (2.2.1)
+      rack (>= 3)
+    redis-client (0.26.1)
+      connection_pool
+    ruby2_keywords (0.0.5)
+    sidekiq (8.0.7)
+      connection_pool (>= 2.5.0)
+      json (>= 2.9.0)
+      logger (>= 1.6.2)
+      rack (>= 3.1.0)
+      redis-client (>= 0.23.2)
+    sinatra (4.1.1)
+      logger (>= 1.6.0)
+      mustermann (~> 3.0)
+      rack (>= 3.0.0, < 4)
+      rack-protection (= 4.1.1)
+      rack-session (>= 2.0.0, < 3)
       tilt (~> 2.0)
-    tilt (2.0.10)
+    tilt (2.6.1)
 
 PLATFORMS
   ruby
@@ -31,11 +45,12 @@ PLATFORMS
 DEPENDENCIES
   poker-ranking
   puma
+  rackup
   sidekiq
   sinatra
 
 RUBY VERSION
-   ruby 3.1.4p223
+   ruby 3.4.6p54
 
 BUNDLED WITH
-   2.1.2
+   2.6.9

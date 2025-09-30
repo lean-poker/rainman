@@ -3,7 +3,7 @@ require "poker_ranking"
 require "json"
 
 get "/rank" do
-  cards = JSON.parse(request[:cards])
+  cards = JSON.parse(params['cards'])
   if cards.length >= 5
     JSON.generate PokerRanking::Hand.new(cards).data
   else
@@ -12,8 +12,8 @@ get "/rank" do
 end
 
 post "/rank" do
-  p request[:cards]
-  cards = JSON.parse(request[:cards])
+  p params['cards']
+  cards = JSON.parse(params['cards'])
   p cards
   if cards.length >= 5
     JSON.generate PokerRanking::Hand.new(cards).data
